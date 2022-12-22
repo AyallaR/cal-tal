@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+.container {
+    display: grid;
+    grid-template-columns:2fr 5fr 2fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "h m s"
+    ;
+    font-size: x-large;
+  }
+
+.scientific {
+    grid-area: s;
+    background-color: #dffed9;
+    
+  }
+
+.history {
+    grid-area: h;
+    background-color: #99a194;
+  }
+  
+.main {
+    grid-area: m;
+    background-color: #b0dfee;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 2.5fr) 1fr;
+    grid-template-rows: repeat(7,1fr);
+    border-color: black;
+    border-style: solid;
+    height: 90vh;
+    width: 100%;
+  }
+
+.colspan {
+    grid-column: 2/5;
+    color: black;
+  }
+#screen{
+    background-color: yellow;
+    border: black solid 7px;
+}
+button{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.dark-mode {
+  * {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    border-color: white;
+  }
+  *:hover{
+    background-color: rgb(61, 88, 88);
+  }
+}

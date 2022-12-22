@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"
+        href="https://emojiguide.org/images/emoji/f/1608mt4q1qpwf.png"
+      type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="history" id="operation-log"></div>
+        <div class="main">
+            <button  id="info" value="info" onclick="info()">🛈</button>
+            <button id="tit" class="colspan" disabled>My Calculator</button>
+            <button id="config" value="config" onclick="displayButtonInfo(value)">⚙️</button>
+            <button id="lightTheme" value="lightTheme" onclick="mode()">🔦</button>
+            <input type="text" id="screen" class="colspan">
+            <button id="erase" value="erase" onclick="displayButtonInfo(value)">🔙</button>
+            <button id="history-panel" value="history-panel" onclick="displayButtonInfo(value)">👀</button>
+            <button id="clear" value="reset" class="colspan" onclick="displayButtonInfo()">C</button>
+            <button id="divide" value="/" class="operator" >➗</button>
+            <button id="sci-mode" value="sci-mode" onclick="displayButtonInfo(value)">&#402;</button>
+            <button id="7" class="num" onclick="displayButtonInfo(id)">7</button>
+            <button id="8" class="num" onclick="displayButtonInfo(id)">8</button>
+            <button id="9" class="num" onclick="displayButtonInfo(id)">9</button>
+            <button id="x" class="operator" >✖</button>
+            <button id="api-mode" onclick="displayButtonInfo(id)">Api-mode👩🏻‍💻</button>
+            <button id="4" class="num" onclick="displayButtonInfo(id)">4</button>
+            <button id="5" class="num" onclick="displayButtonInfo(id)">5</button>
+            <button id="6" class="num" onclick="displayButtonInfo(id)">6</button>
+            <button id="-" class="operator" >➖</button>
+            <button disabled>:)</button>
+            <button id="1" class="num" onclick="displayButtonInfo(id)">1</button>
+            <button id="2" class="num" onclick="displayButtonInfo(id)">2</button>
+            <button id="3" class="num" onclick="displayButtonInfo(id)">3</button>
+            <button id="+" class="operator" >➕</button>
+            <button disabled class="empty"></button>
+            <button id="+/-" class="operator" onclick="displayButtonInfo(id)">±</button>
+            <button id="0" class="num" onclick="displayButtonInfo(id)">0</button>
+            <button id="." class="decimal" onclick="displayButtonInfo(id)">•</button>
+            <button id="=" class="equal" onclick="displayButtonInfo(id)">=</button>
+        </div>
+        <div class="scientific">sc</div>
+    </div>
+
+<script src="./calculator.js"></script>
+</body>
+</html>
